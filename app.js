@@ -4,15 +4,15 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-app.use(function (req, res) {
+/*app.use(function (req, res) {
     return res.sendStatus(200);
 });
-
+*/
 app.get('/',function (req, res) {
     console.log("123")
     return res.send("Hello world")
 });
 
 app.listen(8000, function () {
-    console.log('Sample Hosting app listening on port 8000 v1');
+    console.log('Sample Hosting app listening on port 8000 v2');
 });
