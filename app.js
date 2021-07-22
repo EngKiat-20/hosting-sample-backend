@@ -8,6 +8,10 @@ app.use(function (req, res) {
     return res.sendStatus(200);
 });
 
+app.get('/',function (req, res) {
+    return res.send("Hello world")
+});
+
 app.listen(8000, function () {
     console.log('Sample Hosting app listening on port 8000');
 });
